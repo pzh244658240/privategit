@@ -1,0 +1,36 @@
+{
+  "name": "zaojia",
+  "version": "0.0.1",
+  "authors": [
+    "pengzhonghui"
+  ],
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.20",
+    "jquery": "~1.11.0",
+    "stats.js": "*",
+    "bootstrap": "^3.3.6",
+    "plupload": "moxiecode/plupload#^1.5.7",
+    "privategit":"pzh244658240/privategit",
+    "seajs": "seajs/seajs#^2.2.1",
+		"require":"jrburke/requirejs#^2.1.11",
+		"respond":"scottjehl/Respond",
+		"uedtier":"fex-team/ueditor"
+  },
+  "description": "造价依赖",
+  "main": "info1",
+  "keywords": [
+    "info2"
+  ],
+  "homepage": "",
+  "private": true
+}
