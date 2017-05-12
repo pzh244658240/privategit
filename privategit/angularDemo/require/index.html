@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-controller="appCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ego</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="resources/library/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/iconfont/iconfont.css" />
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/tool/tool.less" />
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/tool/table.less" />
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/tool/mgpd.less" />
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/tool/popupWindow.less" />
+    <!-- 项目样式 -->
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/layout/layout.less" />
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/layout/app.less" />
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/layout/config.less" />
+    <link rel="stylesheet/less" type="text/css" href="resources/src/css/layout/user.less" />
+    <!-- 项目样式END -->
+	
+    <!--[if lt IE 9]>
+    <script src="resources/library/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="resources/library/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="resources/library/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="resources/library/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="resources/library/bower_components/less/dist/less.js"></script>
+
+   
+    <script src="resources/library/bower_components/angular/angular.min.js"></script>
+
+    <script src="resources/library/bower_components/privategit/privategit/lib/map.js"></script>
+    <script type="text/javascript" src="resources/library/common/popupWindow.js"></script>
+    <script src="resources/library/bower_components/privategit/privategit/lib/lhgcalender/lhgcalendar.min.js"></script>
+    
+</head>
+<body>
+<div class="wrapper" ui-view></div>
+
+
+
+
+	<!-- <script type="text/javascript"
+			data-main="resources/main/requiremain"
+			src="resources/bower_components/requirejs/require.js">
+	</script> -->
+	
+	
+	<script>
+	function getRootPath(){
+	    var curWwwPath=window.document.location.href;
+	    var pathName=window.document.location.pathname;
+	    var pos=curWwwPath.indexOf(pathName);
+	    var localhostPaht=curWwwPath.substring(0,pos);
+	    var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+	    return(localhostPaht+projectName);
+   }
+	var basePath =getRootPath();
+	var timestamp=new Date().getTime();
+	</script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/app.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/app.constant.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/ToolService.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/resources.config.js"></script>
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/appCtrl/centerCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/appCtrl/addCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/appCtrl/editCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/appCtrl/applicationCtrl.js"></script>
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/pagesCtrl/pagesCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/pagesCtrl/addCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/pagesCtrl/labelCtrl.js"></script>
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/appMenuCtrl/menuCtrl.js"></script>
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/setDataCtrl/setDataCtrl.js"></script>
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/configCtrl/configCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/datasourceCtrl/datasourceCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/datasourceCtrl/addCtrl.js"></script>
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/datasetCtrl/datasetCtrl.js"></script>
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/datasetCtrl/addCtrl.js"></script>
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/partsCtrl/partsCtrl.js"></script>
+		
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/userCtrl/userCtrl.js"></script>
+    
+    <script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/control/roleCtrl/roleCtrl.js"></script>
+
+	
+	<script type="text/javascript" src="resources/src/js/portal/dataview/portalparts/app.router.js"></script>
+</body>
+</html>
