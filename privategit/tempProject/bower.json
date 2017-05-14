@@ -1,0 +1,51 @@
+{
+  "name": "Ego",
+  "version": "1.0",
+  "authors": [
+    "pengzhonghui"
+  ],
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.20",
+	"angularjs-route": "angular/bower-angular-route",
+    "requirejs":"requirejs/requirejs#^2.1.12",
+    "jquery": "~1.11.0",
+    "bootstrap": "^3.3.6",
+    "seajs": "seajs/seajs#^2.2.1",
+    "respond":"scottjehl/Respond",
+    "plupload": "moxiecode/plupload#^1.5.7",
+    "privategit":"pzh244658240/privategit",
+    "jqueryserialize":"macek/jquery-serialize-object",
+    "ace":"ajaxorg/ace",
+	"html5shiv":"aFarkas/html5shiv",
+	"ngJsTree":"ezraroi/ngJsTree",
+	"icheck":"fronteed/icheck",
+	"underscore":"jashkenas/underscore",
+	"ui-select":"angular-ui/ui-select",
+	"ui-bootstrap":"angular-ui/bootstrap",
+	"es5-shim":"es-shims/es5-shim",
+	"jquery-ui":"jquery/jquery-ui",
+	"less":"less/less.js"
+	
+  },
+  "description": "造价依赖",
+  "main": "info1",
+  "keywords": [
+    "info2"
+  ],
+  "homepage": "",
+  "private": true,
+  "devDependencies": {
+  	"stats.js": "*"
+  },
+  "directory" : "resoures/components"
+}
